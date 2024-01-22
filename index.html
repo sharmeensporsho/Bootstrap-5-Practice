@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+  
+  <title>Bootstrap Practice</title>
+</head>
+<body>
+<div class="container">
+  <h1>Bootstrap-5 Practice</h1>
+  <h3>Interactions</h3>
+  <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+  <p class="user-select-auto">This paragraph has default select behavior.</p>
+  <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+  <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be 
+     clicked. 
+  </p>
+  <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+  <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked 
+     because the <code>pointer-events</code> property is inherited from its parent. However, 
+     <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked. 
+  </p>
+</div>
+<div class="container">
+ <h1>Links Practice</h1>
+ <h3>Link Opasity</h3>
+ <p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
+ <p><a class="link-opacity-25" href="#">Link opacity 25</a></p>
+ <p><a class="link-opacity-50" href="#">Link opacity 50</a></p>
+ <p><a class="link-opacity-75" href="#">Link opacity 75</a></p>
+ <p><a class="link-opacity-100" href="#">Link opacity 100</a></p>
+
+ <h4>You can even change the opacity level on hover</h4>
+
+ <p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a></p>
+ <p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a></p>
+ <p><a class="link-opacity-50-hover" href="#">Link hover opacity 50</a></p>
+ <p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a></p>
+ <p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a></p>
+
+</div>
+<div class="container">
+    <h1>Link underlines</h1>
+    <h3>Underline color</h3>
+ <p><a href="#" class="link-underline-primary">Primary underline</a></p>
+ <p><a href="#" class="link-underline-secondary">Secondary underline</a></p>
+ <p><a href="#" class="link-underline-success">Success underline</a></p>
+ <p><a href="#" class="link-underline-danger">Danger underline</a></p>
+ <p><a href="#" class="link-underline-warning">Warning underline</a></p>
+ <p><a href="#" class="link-underline-info">Info underline</a></p>
+ <p><a href="#" class="link-underline-light">Light underline</a></p>
+ <p><a href="#" class="link-underline-dark">Dark underline</a></p>
+ <h3>Underline Offset</h3>
+ <p><a href="#">Default link</a></p>
+ <p><a class="link-offset-1" href="#">Offset 1 link</a></p>
+ <p><a class="link-offset-2" href="#">Offset 2 link</a></p>
+ <p><a class="link-offset-3" href="#">Offset 3 link</a></p>
+ <h3>Underline Opacity</h3>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-10" href="#">Underline opacity 10</a></p>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-25" href="#">Underline opacity 25</a></p>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-50" href="#">Underline opacity 50</a></p>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-75" href="#">Underline opacity 75</a></p>
+ <p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a></p>
+
+ <h3>Hover Variants</h3>
+ <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+    Underline opacity 0
+ </a>
+  <h3>Colored Links</h3>
+ <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Primary link</a></p>
+ <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary link</a></p>
+ <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+ <p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Danger link</a></p>
+ <p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Warning link</a></p>
+ <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Info link</a></p>
+ <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Light link</a></p>
+ <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dark link</a></p>
+ <p><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p>
+</div>
+
+<div class="container">
+
+  <h1>Opacity</h1>
+  <div class="bd-example d-sm-flex">
+    <div class="opacity-100 p-3 m-2 bg-primary text-nowrap fw-semibold">100%</div>
+    <div class="opacity-75 p-3 m-2 bg-primary text-body-emphasis fw-bold rounded-2">75%</div>
+    <div class="opacity-50 p-3 m-2 bg-primary text-white fw-semibold rounded">50%</div>
+    <div class="opacity-30 p-3 m-2 bg-primary text-light fw-bold rounded">30%</div>
+
+
+</div>
+
+<div class="container">
+
+<h1>Overflow</h1>
+<div class="bd-example d-md-flex">
+    <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <strong>.overflow-auto</strong> on an element with set width and height dimensions. By design, this content will vertically scroll.
+    </div>
+    <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-primary" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
+    </div>
+    <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
+    </div>
+    <div class="overflow-scroll p-3 bg-primary" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
+    </div>
+</div>
+
+
+
+<div class="container">
+<h1>overflow-x</h1>
+<div class="bd-example d-md-flex">
+    <div class="overflow-x-auto p-0 mb-4 mb-md-2 me-md-4 bg-primary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap;">
+    <div><code>.overflow-x-auto</code> example on an element</div>
+    <div> with set width and height dimensions.</div>
+    </div>
+    <div class="overflow-x-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;white-space: nowrap;">
+    <div><code>.overflow-x-hidden</code> example</div>
+    <div>on an element with set width and height dimensions.</div>
+    </div>
+    <div class="overflow-x-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;white-space: nowrap;">
+    <div><code>.overflow-x-visible</code> example </div>
+    <div>on an element with set width and height dimensions.</div>
+    </div>
+    <div class="overflow-x-scroll p-3 bg-primary w-100" style="max-width: 310px; max-height: 200px;white-space: nowrap;">
+    <div>.overflow-x-scroll example on an element</div>
+    <div> with set width and height dimensions.</div>
+    </div>
+ </div>
+</div>
+
+
+<div class="container">
+  <h1>Overflow-y</h1>
+  <div class="bd-example d-md-flex">
+    <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 300px; max-height: 100px;">
+   <big>.overflow-y-auto</big> example on an element with set width and height dimensions.
+    </div>
+    <div class="overflow-y-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
+    <code>.overflow-y-hidden</code> example on an element with set width and height dimensions.
+    </div>
+    <div class="overflow-y-visible p-6 mb-4 mb-md-0 me-md-4 bg-body-tertiary w-100" style="max-width: 400px; max-height: 100px;">
+    <strong>.overflow-y-visible</strong> example on an element with set width and height dimensions.
+    </div>
+    <div class="overflow-y-scroll p-3 bg-primary w-100" style="max-width: 300px; max-height: 200px;">
+    .overflow-y-scroll example on an element with set width and height dimensions.
+  </div>
+  </div>
+
+
+
+</div>
+
+<div class="container">
+    <div class="position-relative">
+        <div class="position-absolute top-0 start-0"></div>
+        <div class="position-absolute top-0 end-0"></div>
+        <div class="position-absolute top-50 start-50"></div>
+        <div class="position-absolute bottom-50 end-50"></div>
+        <div class="position-absolute bottom-0 start-0"></div>
+        <div class="position-absolute bottom-0 end-0"></div>
+    </div>
+        
+
+
+</div>
+<div class="container">
+
+<div class="position-relative">
+    <div class="position-absolute top-0 start-0 translate-middle"></div>
+    <div class="position-absolute top-0 start-50 translate-middle"></div>
+    <div class="position-absolute top-0 start-100 translate-middle"></div>
+    <div class="position-absolute top-50 start-0 translate-middle"></div>
+    <div class="position-absolute top-50 start-50 translate-middle"></div>
+    <div class="position-absolute top-50 start-100 translate-middle"></div>
+    <div class="position-absolute top-100 start-0 translate-middle"></div>
+    <div class="position-absolute top-100 start-50 translate-middle"></div>
+    <div class="position-absolute top-100 start-100 translate-middle"></div>
+</div>
+
+
+<div class="position-relative">
+    <div class="position-absolute top-0 start-0"></div>
+    <div class="position-absolute top-0 start-50 translate-middle-x"></div>
+    <div class="position-absolute top-0 end-0"></div>
+    <div class="position-absolute top-50 start-0 translate-middle-y"></div>
+    <div class="position-absolute top-50 start-50 translate-middle"></div>
+    <div class="position-absolute top-50 end-0 translate-middle-y"></div>
+    <div class="position-absolute bottom-0 start-0"></div>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x"></div>
+    <div class="position-absolute bottom-0 end-0"></div>
+</div>
+
+<h1>position</h1>
+
+<h2>Examples</h2>
+
+<button type="button" class="btn btn-primary position-relative">
+    Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg- 
+     secondary">+99 <span class="visually-hidden">unread messages</span></span>
+</button>
+  
+<div class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill">
+    Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start- 
+     50 translate-middle mt-1" fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg"><path 
+    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 
+     1 0 0 1-1.506 0z"/></svg>
+</div>
+  
+<button type="button" class="btn btn-primary position-relative">
+    Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light 
+     rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+</button>
+
+<h1>Examples</h1>
+<div class="position-relative m-4">
+  
+
+<div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" 
+        aria-valuemax="100" style="height: 1px;">
+  <div class="progress-bar" style="width: 50%"></div>
+</div>
+
+    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn- 
+       primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+    <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn- 
+      primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn- 
+         secondary rounded-pill" style="width: 2rem; height:2rem;">3
+    </button>
+
+    <div class="container">
+      <h1>Shadows</h1>
+
+      <div class="shadow-none p-3 mb-5 rounded">No shadow</div>
+      <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+      <div class="shadow-lg p-3 mb-5 bg-danger rounded">Larger shadow</div>
+
+    <div class="container">
+       <h1>Sizing</h1>
+
+      <div class="w-25 p-3 bg-primary">Width 25%</div>
+      <div class="w-50 p-3 bg-primary">Width 50%</div>
+      <div class="w-75 p-3 bg-primary">Width 75%</div>
+      <div class="w-100 p-3 bg-primary">Width 100%</div>
+      <div class="w-auto p-3 bg-primary">Width auto</div>
+
+      <div style="height: 100px;">
+        <div class="h-25 d-inline-block bg-danger" style="width: 120px;">Height 25%</div>
+        <div class="h-50 d-inline-block bg-danger" style="width: 120px;">Height 50%</div>
+        <div class="h-75 d-inline-block bg-danger" style="width: 120px;">Height 75%</div>
+        <div class="h-100 d-inline-block bg-danger" style="width: 120px;">Height 100%</div>
+        <div class="h-auto d-inline-block bg-danger" style="width: 120px;">Height auto</div>
+      </div>
+
+      <div style="width: 50%; height: 100px;">
+        <div class="mw-100 bg-primary" style="width: 200%;">Max-width 100%</div>
+      </div>
+
+      <div style="height: 100px;">
+        <div class="mh-100 bg-danger" style="width: 100px; height: 200px;">Max-height 100%</div>
+      </div>
+
+      <div class="min-vw-100 bg-primary">Min-width 100vw</div>
+      <div class="min-vh-100 bg-danger">Min-height 100vh</div>
+      <div class="vw-100 bg-primary">Width 100vw</div>
+      <div class="vh-100 bg-danger">Height 100vh</div>
+
+    </div>
+
+    <h1>Spacing</h1>
+
+    <div class="mx-auto p-2 bg-primary text-bg-secondary border-light" style="width: 200px;">
+      Centered element
+    </div>
+
+    <div class="grid gap-3">
+      <div class="p-2 g-col-6 bg-danger d-sm-flex">Grid item 1</div>
+      <div class="p-2 g-col-6 bg-primary d-sm-flex">Grid item 2</div>
+      <div class="p-2 g-col-6">Grid item 3</div>
+      <div class="p-2 g-col-6">Grid item 4</div>
+    </div>
+
+    <h1>Text</h1>
+
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+
+<div class="badge bg-primary text-wrap" style="width: 6rem;">
+  This text should wrap.
+</div>
+
+<div class="text-nowrap bg-body-secondary border" style="width: 8rem;">
+  This text should overflow the parent.
+</div>
+
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+<p class="fs-1">.fs-1 text</p>
+<p class="fs-2">.fs-2 text</p>
+<p class="fs-3">.fs-3 text</p>
+<p class="fs-4">.fs-4 text</p>
+<p class="fs-5">.fs-5 text</p>
+<p class="fs-6">.fs-6 text</p>
+
+<p class="fw-bold">Bold text.</p>
+<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="fw-semibold">Semibold weight text.</p>
+<p class="fw-medium">Medium weight text.</p>
+<p class="fw-normal">Normal weight text.</p>
+<p class="fw-light">Light weight text.</p>
+<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="fst-italic">Italic text.</p>
+<p class="fst-normal">Text with normal font style</p>
+
+<p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+<p class="text-body-secondary">
+  Secondary body text with a <a href="#" class="text-reset">reset link</a>.
+</p>
+
+<p class="text-decoration-underline">This text has a line underneath it.</p>
+<p class="text-decoration-line-through">This text has a line going through it.</p>
+<a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+
+<h1>Vertical align</h1>
+<table style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h1>Z-index</h1>
+
+<div class="z-3 position-absolute p-5 rounded-3 bg-primary"><span >Sporsho</span></div>
+<div class="z-2 position-absolute p-5 rounded-3 bg-danger"><span>Sporsho</span></div>
+<div class="z-1 position-absolute p-5 rounded-3 bg-body-tertiary"><span>Sporsho</span></div>
+<div class="z-0 position-absolute p-5 rounded-3 bg-body-secondary"><span>Sporsho</span></div>
+<div class="z-n1 position-absolute p-5 rounded-3 bg-primary"><span>Sporsho</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+ 
+
+
+</body>
+</html>
